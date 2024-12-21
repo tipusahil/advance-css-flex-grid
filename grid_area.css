@@ -1,0 +1,6 @@
+.header, nav ,.main ,.asidebar,.advertise  ,.footer{
+    background-color: purple;
+    color:white;
+    border-radius: 10px;
+    border:2px solid rgb(70, 228, 228);
+}
