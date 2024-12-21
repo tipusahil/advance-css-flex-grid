@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid diye responsive layout</title>
+
+
+<style>
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:10px; 
+        /* ekane shudo gap dewai (row/column-gap) use n korai 2dike ortat column & row borabor 2side e gap nibe,  */
+    
+        padding: 10px;
+    
+    }
+    .pic img{
+
+        width: 100%;
+    }
+
+    /* jodi normal design k responsive korte cai tkn media query te just grid-template-columns er value ta change krote hobe. */
+
+/* smallest device er jonno */
+@media screen and (max-width:576px) {
+    
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+        background-color: rgb(210, 249, 249);
+    }
+}
+
+/* samaller / tab device er jonno  */
+@media screen and (min-width:576px) and (max-width: 990px) {
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+        background-color: purple;
+    }
+}
+</style>
+
+
+
+
+
+</head>
+<body>
+    
+    <!--shortcut:( .pic*12>img[src="images/lake1.jpg"]+h3{price : - \$$00}+p{lorem10}+button{button - $} ) -->
+
+<div class="container">
+    <div class="pic">
+        <img src="images/sea1.jpg" alt="">
+        <h3>price:  $100</h3>
+        <p>lorem10</p>
+        <button>button -1</button>
+    </div>
+    <div class="pic">
+        <img src="images/sea1.jpg" alt="">
+        <h3>price:  $200</h3>
+        <p>lorem10</p>
+        <button>button -2</button>
+    </div>
+    <div class="pic">
+        <img src="images/sea1.jpg" alt="">
+        <h3>price:  $300</h3>
+        <p>lorem10</p>
+        <button>button -3</button>
+    </div>
+    <div class="pic">
+        <img src="images/sea1.jpg" alt="">
+        <h3>price:  $400</h3>
+        <p>lorem10</p>
+        <button>button -4</button>
+    </div>
+    <div class="pic">
+        <img src="images/sea1.jpg" alt="">
+        <h3>price:  $500</h3>
+        <p>lorem10</p>
+        <button>button -5</button>
+    </div>
+    <div class="pic">
+        <img src="images/sea1.jpg" alt="">
+        <h3>price:  $600</h3>
+        <p>lorem10</p>
+        <button>button -6</button>
+    </div>
+    <div class="pic">
+        <img src="images/sea1.jpg" alt="">
+        <h3>price:  $700</h3>
+        <p>lorem10</p>
+        <button>button -7</button>
+    </div>
+    <div class="pic">
+        <img src="images/sea1.jpg" alt="">
+        <h3>price:  $800</h3>
+        <p>lorem10</p>
+        <button>button -8</button>
+    </div>
+    <div class="pic">
+        <img src="images/sea1.jpg" alt="">
+        <h3>price:  $900</h3>
+        <p>lorem10</p>
+        <button>button -9</button>
+    </div>
+    <div class="pic">
+        <img src="images/sea1.jpg" alt="">
+        <h3>price:  $1000</h3>
+        <p>lorem10</p>
+        <button>button -10</button>
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid diye calander tamplete </title>
+
+
+<style>
+
+.date_container{/* */
+
+    display: grid; /*  default vabe eta thake,but grid er onno aro property use korte caile age disply grid property declare korte hobe,*/
+    grid-template-columns: repeat(7,1fr);
+    row-gap: 5px; /* pashepashi/row borabor gap dite caile (row-gap) property use korte hobe, ar column borabor gap dite caile (column-gap)property use korte hobe. */
+    column-gap: 5px;
+}
+
+.date , .day{
+ background-color:rgb(126, 241, 241);
+ /* .date class wala box e jodi content 1taw thake ar seta k jodi center e ante cai tkn (disply-flex) properyt use kore, justify,aling-item er value center dite hobe ,tahole .date class wala box er content ekta takuk ar 100 ta takuk center e cole asbe. */
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+ padding: 6px 2px;
+border-radius: 10px;
+}
+
+
+.day{ /* ekane (day) ta (date) er sate style kora hoyece,sob  but pore alada kore jkn nise color dilm,tkn niser color tai paise, so css e same tag e k ekadik bar style korle niser ta priority beshi pai. */
+    background-color: lightgray;
+}
+</style>
+
+
+
+
+
+    
+</head>
+<body>
+
+    <h1>my calander make by grid & flex</h1>
+    
+<div class="date_container">
+
+    <div class="day">sun</div>
+    <div class="day">mon</div>
+    <div class="day">tous</div>
+    <div class="day">wed</div>
+    <div class="day">tuis</div>
+    <div class="day">fri</div>
+    <div class="day">sat</div>
+
+    <div class="date">1</div>
+    <div class="date">2</div>
+    <div class="date">3</div>
+    <div class="date">4</div>
+    <div class="date">5</div>
+    <div class="date">6</div>
+    <div class="date">7</div>
+    <div class="date">8</div>
+    <div class="date">9</div>
+    <div class="date">10</div>
+    <div class="date">11</div>
+    <div class="date">12</div>
+    <div class="date">13</div>
+    <div class="date">14</div>
+    <div class="date">15</div>
+    <div class="date">16</div>
+    <div class="date">17</div>
+    <div class="date">18</div>
+    <div class="date">19</div>
+    <div class="date">20</div>
+    <div class="date">21</div>
+    <div class="date">22</div>
+    <div class="date">23</div>
+    <div class="date">24</div>
+    <div class="date">25</div>
+    <div class="date">26</div>
+    <div class="date">27</div>
+    <div class="date">28</div>
+    <div class="date">29</div>
+    <div class="date">30</div>
+    <div class="date">31</div>
+    <div class="date">32</div>
+    <div class="date">33</div>
+    <div class="date">34</div>
+    <div class="date">35</div>
+
+</div>
+
+
+</body>
+</html>

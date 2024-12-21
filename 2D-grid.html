@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> grid 2d</title>
+
+
+
+
+
+<style>
+
+.items_container{  
+
+display: grid;  /*default vabe etai thake */
+
+/*
+grid-template-columns: 100px;
+grid-template-columns: 50%  2fr 60px  50px auto;
+ grid-template-columns: 100px 150px;
+grid-template-columns: auto auto auto auto auto;
+grid-template-rows: 50px 50px auto 100px 100px; 
+grid-template-columns: repeat(1,3fr);
+grid-template-columns: 200px repeat(6,1fr);
+grid-template-columns: 2fr auto 100px;
+grid-template-columns: 2fr 1fr 3fr;
+grid-template-columns: 2fr 1fr 3fr;
+uporer kontar kaj ki konta diye ki hocce seta comment theke ber korlei bujte parbo.
+    /* grid-template-columns: 100px 150px; > 
+    eta diwai 100px er vitore item gulo grid hoye boshbe.  */
+/* grid-template-columns: 50%  2fr 60  50px auto; >eksate erkom multiple binno binno value use kore grid kora jabe, */
+/* grid-template-columns: auto auto auto auto auto; > 5ta column hobe, sob gulo auto jaiga nibe. */
+
+
+/* grid-template-rows: 50px 50px auto 100px 100px; > row  borabor grid hobe dewa value onujai,column er jonno jei jei properyt/value use kora hoyece, same rows er jonnoi same property/value use kora jabe. */
+/* 
+ */
+/*
+ > 3ta column hobe 1 ongsho kore pabe, fr mane ongsho ,ar (komar) ager value 3 mane holo koita column hobe sta bujacce.bracket er vitorer protom value ta koita column hobe seta define kore ,& porer value, ar (fr er sate jei value ta dewa hoi seta mane holo) prottekta column koi onsgho kore jaiga pabe seta, ortat 2 dile double jaigai 3 dile 3gon jaiga pabe, evabe fr ta kaj kore. */
+
+grid-template-columns: 2fr 1fr 3fr;
+/* ekane protom column ta 2fr jaiga pabe, karon 1at value(2fr)
+2nd column ta 1fr jaiga pabe,karon 2rd value(1fr)
+3rd column ta 3double jaiga pabe,karon3rd value(3fr) */
+
+border:4px solid red;
+padding: 5px;
+
+}
+
+.item{
+    border:2px solid black;
+    margin:5px;
+}
+</style>
+
+
+
+
+
+
+</head>
+<body>
+    
+<h1>grid 2D (2 dimensional grid) in css</h1>
+
+<div class="items_container">
+
+    <!-- shortcut:( .item{item - $}*10  ) enter-->
+<div class="item">item - 1</div>
+<div class="item">item - 2</div>
+<div class="item">item - 3</div>
+<div class="item">item - 4</div>
+<div class="item">item - 5</div>
+<div class="item">item - 6</div>
+<div class="item">item - 7</div>
+<div class="item">item - 8</div>
+<div class="item">item - 9</div>
+<div class="item">item - 10</div>
+
+<div class="item">item - 1</div>
+<div class="item">item - 2</div>
+<div class="item">item - 3</div>
+<div class="item">item - 4</div>
+<div class="item">item - 5</div>
+<div class="item">item - 6</div>
+<div class="item">item - 7</div>
+<div class="item">item - 8</div>
+<div class="item">item - 9</div>
+<div class="item">item - 10</div>
+
+</div>
+    
+</body>
+</html>

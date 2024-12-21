@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lun dev er grid class</title>
+</head>
+<body>
+    
+        
+<div class="container">
+    <div class="item i1">item -1</div>
+    <div class="item i2">item -2</div>
+    <div class="item i3">item -3</div>
+    <div class="item i4">item -4</div>
+    <div class="item i5">item -5</div>
+    <div class="item i6">item -6</div>
+    <div class="item i7">item -7</div>
+    <div class="item i8">item -8</div>
+</div>
+<style>
+
+.container{
+    background-color:red;
+    padding:10px;
+    border: 2px solid darkblue;
+    width: 800px;
+    display: grid;
+  grid-template-areas:
+
+  "     .       .       .     .     ."
+  "     .       .       .     .     .";
+}
+
+.item {
+    background-color: navy;
+    border:1px solid white;
+    color:rgb(255, 253, 253);
+
+}
+
+i1{
+    grid-area: i1;
+}
+i2{
+    grid-area: i2;
+}
+i3{
+    grid-area: i3;
+}
+i4{
+    grid-area: i4;
+}
+i5{
+    grid-area: i58;
+}
+</style>
+
+</body>
+</html>
