@@ -1,10 +1,11 @@
-.header, nav ,.main ,.asidebar,.advertise  ,.footer{
+.header, nav ,.main ,.aside_barr,.advertise  ,.footer{
     background-color: purple;
     color:white;
     border-radius: 10px;
     border:2px solid rgb(70, 228, 228);
 }
-/* , nav ,.main ,.asidebar,.advertise  ,.footer */
+
+
 
 .header{
 grid-area: header;
@@ -17,8 +18,8 @@ grid-area: header;
     grid-area: main;
 }
 
-.asidebar{
-    grid-area: asidebar;
+.aside_barr{
+    grid-area: aside_barr;
 }
 
 .advertise{
@@ -27,4 +28,49 @@ grid-area: header;
 
 .footer{
     grid-area: footer;
+}
+
+#container{
+    display: grid;
+    grid-template-areas:  
+    "header header  header   header"
+    "nav     main    main   aside_barr"
+    "nav     main    main   aside_barr"
+    "nav     main    main   advertise"
+    "footer  footer footer  footer" ;
+
+    gap:10px;
+width: 100%;
+height: 500px;
+}
+
+/* for mobile screen */
+@media screen and (max-width:576px) {
+    #container{
+
+        grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "aside_barr"
+        "advertise"
+        "footer"
+        ;
+    }
+    
+}
+
+/* for tab screen */
+
+@media screen and (min-width: 576px) and (max-width:990px) {
+
+    #container{
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "aside_barr main"
+        " advertise footer "
+       
+        ;
+    }
 }
